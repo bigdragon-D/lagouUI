@@ -1,6 +1,6 @@
 # lagouUI
 lagouUI文档结构如下
-
+```
 lagouUI/
 ├── src/
 |	 ├──── img/
@@ -33,3 +33,4 @@ lagouUI/
 ├── gulpfile.js
 ├── package.json 
 └── README.md 
+```
