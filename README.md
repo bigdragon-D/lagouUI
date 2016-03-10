@@ -37,7 +37,7 @@ lagouUI源文件 文档结构如下
         │   ├── input.less
         │   ├── multiselect.less
         │   └── reset.less---必需引用
-        └── variables.less
+        └── variables.less---必需引用
 ```
 
 
