@@ -1,35 +1,44 @@
 # lagouUI
-lagouUI文档结构如下
+lagouUI源文件 文档结构如下
 
-lagouUI/
-├── src/
-|	 ├──── img/
-|	 ├──── js/
-|	 |      ├── ui.baseUtils.js  	基础方法，公共方法
-|    |      ├── ui.checkbox.js   	复选框js源文件
-|    |      ├── ui.datepicker.js 	日期时间js源文件
-|    |      ├── ui.dropbox.js    	下拉框js源文件
-|	 |      └── ui.multiSelect.js   多选框js源文件 
-|    |
-|    ├──── less/
-|    |      ├── mixins/             
-|	 |		|      ├── btn-icon.less 		带图标按钮Less源文件
-|	 |		|      ├── caret.less 	    	上/右/下/左箭头Less源文件
-|	 |		|      ├── clearfix.less 		清楚浮动Less源文件
-|	 |		|      ├── text-overflow.less 	文本溢出Less源文件
-|	 |		|      ├── verder-prefixes.less 带有第三方前缀属性Less源文件
-|	 |		|      └── mixins.less 	        引入所有方法Less源文件
-|	 |		|
-|    |      ├── modules/
-|	 |		|      ├── btn.less 			按钮Less源文件
-|	 |		|      ├── checkbox.less 		复选框Less源文件
-|	 |		|      ├── datepicker.less 		日期时间选框Less源文件
-|	 |		|      ├── dropbox.less 		下拉框Less源文件
-|	 |		|      ├── input.less 			输入框Less源文件
-|	 |		|      ├── multiselect.less 	多选框Less源文件
-|	 |		|      ├── reset.less 			重置样式Less源文件
-|	 |		|      ├── textarea.less 		文本域Less源文件
-|	 |		|      └── tips.less 			提示框Less源文件
+```
+.
+├── README.md
 ├── gulpfile.js
-├── package.json 
-└── README.md 
+├── package.json
+└── src
+    ├── img
+    │   ├── arrow-icon.png
+    │   ├── checkbox.png
+    │   ├── icon-download.png
+    │   ├── info.png
+    │   └── tips-close.png
+    ├── js
+    │   ├── ui.baseUtils.js-----必需引用
+    │   ├── ui.checkbox.js
+    │   ├── ui.datepicker.js
+    │   ├── ui.dropbox.js
+    │   └── ui.multiSelect.js
+    └── less
+        ├── lagou.less
+        ├── mixins
+        │   ├── btn-icon.less
+        │   ├── caret.less
+        │   ├── clearfix.less
+        │   ├── mixins.less-----必需引用
+        │   ├── text-overflow.less
+        │   └── vender-prefixes.less
+        ├── modules
+        │   ├── btn.less
+        │   ├── checkbox.less
+        │   ├── datepicker.less
+        │   ├── dropbox.less
+        │   ├── input.less
+        │   ├── multiselect.less
+        │   └── reset.less---必需引用
+        └── variables.less
+```
+
+
+####说明
+	除了必需引用外，其余都可以按需引用对应的less和js
